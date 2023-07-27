@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+		integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	<link rel="icon" href="images/logo.png">
+	<title>Learning Space</title>
+	<style>
+		ul {
+			position: fixed;
+			top: 0%;
+			list-style-type: none;
+			margin-left: 70%;
+			padding: 0;
+			overflow: hidden;
+		}
+
+		li {
+			float: left;
+		}
+
+		li a {
+			display: block;
+			padding: 20px;
+			text-align: center;
+			text-decoration: none;
+			color: ghostwhite;
+			
+		}
+
+		#bar {
+			background-color: tomato;
+			background: transparent;
+		}
+
+		a:hover {
+			color:orangered;
+			border-bottom: 2px solid red;
+			
+		}
+
+
+		.bar {
+			height: 100%;
+			width: 100%;
+			background-image: url("images/giphy.gif");
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+		}
+
+		#two {
+			width: 30%;
+
+		}
+
+		.course {
+			text-align: center;
+			background-color:white;
+		}
+
+		.course h1 {
+			padding: 3%;
+		}
+
+		.row {
+			margin-top: 3%;
+			display: flex;
+			justify-content: space-between;
+			width: 70%;
+			margin-left: 15%;
+		}
+
+		.col p {
+			color: white;
+		}
+
+		.col {
+			background-color: whitesmoke;
+			border: 1px solid grey;
+			margin-left: 10%;
+			padding: 10px;
+			transition: 1s;
+			
+		}
+		.col:hover{
+			transform: scale(1.3);
+		}
+
+		.four {
+			color: blueviolet;
+		}
+
+		.footers {
+			text-align: center;
+			background-color: black;
+			color: white;
+		}
+
+		.about {
+			padding: 3%;
+			border: 0px solid;
+			text-align: center;
+			background-color:white;
+		}
+		
+	</style>
+</head>
+
+<body>
+	<div class="bar">
+		<nav id="nav">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="#about">About</a></li> 
+				<li><a href="#contact">Contact</a></li>
+				<li><a href="login">login</a></li>
+				<li id="one"><a href="register" >Signup</a></li>
+
+			</ul>
+		</nav>
+		<div>
+			<img src="images/logo.png" id="two">
+			<h1 style="color: floralwhite;margin-left: 150px;"><b>India's best tech<br>learning Company</b></h1>
+			<h3 style="color: floralwhite;margin-left: 150px;font-size: 16px;"><small>Learn industry-relevant skills
+					with
+					top tech veterans</small></h3>
+		</div>
+		<br>
+		<br><br><br><br><br><br>
+	</div>
+	<!--courses-->
+	<section class="course">
+		<h1 class="under">Programs We Offer</h1>
+		<div class="row">
+			<div class="col">
+				<h1 class="four">Software Development Course</h1>
+				<p>
+					<medium style="color: black;"><b>Carrer Outcome</b></medium><br>
+					<smal style="color: darkgrey;">Full-stack Developer, Backend Developer<br>
+						<medium style="color: black;"><b>What You Will Learn</b></medium><br>
+						Programming Constructs, Arithmetic Problem Solving, CSA Fundamentals, DS with fundamentals,
+						Object-Oriented Design, System Design (HLD & LLD), Introduction to MVC, Web Architecture, HTML,
+						CSS, JavaScript, Node.JS, Backend Architecture, MongoDB, React/ Redux, Big Data, Cloud
+						Technologies, SQL, Data Warehousing & Modelling, Data Lakes, Hadoop, Spark, Workflow
+						Orchestration, Streaming Pipeline Systems</small>
+				</p>
+			</div>
+			<div class="col">
+				<h1 class="four">Data Science & Machine Learning</h1>
+				<p><small style="color: darkgrey;">
+						<medium style="color: black;"><b>Career Outcome</b></medium><br>
+						Data Analyst, Data Scientist, ML Engineer<br>
+						<medium style="color: black;"><b>What You Will Learn</b></medium><br>
+						Data Science Common core (EDA, Tools, Maths), Data Science & Machine Learning with Analytics:
+						Tableau, SQL, Excel, PA, ML; Deep Learning with AI: Maths for Machine Learning, Machine
+						Learning, Neural Networks; Computer Vision, Natural Language Processing, ML Ops and Data
+						Engineering, Advanced Programming
+					</small></p>
+			</div>
+			<div class="col">
+				<h1 class="four">Testing Course</h1>
+				<p>
+					<medium style="color: black;"><b>Carrer Outcome</b></medium><br>
+					<smal style="color: darkgrey;">Full-stack Developer, Backend Developer<br>
+						<medium style="color: black;"><b>What You Will Learn</b></medium><br>
+						Manual Testing, Automation testing,Programming Constructs, Arithmetic Problem Solving, CSA
+						Fundamentals, DS with fundamentals, Object-Oriented Design, System Design (HLD & LLD),
+						Introduction to MVC, Web Architecture, HTML, CSS, JavaScript, Node.JS, Backend Architecture,
+						MongoDB, React/ Redux, Big Data, Cloud Technologies, SQL, Data Warehousing & Modelling, Data
+						Lakes, Hadoop, Spark, Workflow Orchestration, Streaming Pipeline Systems</small>
+				</p>
+			</div>
+		</div>
+		<br><br>
+	</section>
+	<section class="about" id="about">
+		<h1 class="under" >About Us</h1>
+		<img src="images/about.jpg" width="400" height="300">
+		<h4><small> India’s largest professional learning company and a global footprint in 170+ countries, we’re on a
+				mission to make professionals around the globe proficient and future-ready.
+				In the last 9 years, we have been able to deliver learning to professionals world wide with thousands of
+				them being able to achieve successful career progression in leading companies such as Microsoft, Amazon,
+				Adobe, American Express, Deloitte, IBM, Accenture, McKinsey and more.</small></h4>
+	</section>
+	<footer class="footers" id="contact">
+		<h1 class="under">Contact Details</h1>
+		<h3>+91 1234567890</h3>
+		<h6>
+			<address>CPR Tower, 4th & 5th Floor, above Fresh Market, Stage 2, BTM Layout, Bengaluru, Karnataka 56000
+			</address>
+		</h6><br>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+	<html xmlns:th="https://www.thymeleaf.org">
+
+<head>
+	<style>
+		td{
+			background-color: aquamarine;
+		}
+		#one {
+			position: absolute;
+			top: 20%;
+			left: 33%;
+			padding: 5%;
+			text-align: center;
+			box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+		}
+		h1{
+			border-bottom: 2px solid red;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="one">
+	<h1>Courses Details</h1>
+	<table border="3">
+		<thead>
+			<tr>
+				<th scope="col">Course Id</th>
+				<th scope="col">Course Name</th>
+				<th scope="col">Course Price</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="courses:${courselist}">
+				<td th:text="${courses.c_id}"></td>
+				<td th:text="${courses.c_name}"></td>
+				<td th:text="${courses.c_price}"></td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+</body>
